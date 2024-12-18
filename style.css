@@ -50,7 +50,19 @@ a {
 .navegacao__elemento a {
     font-size: 0.9rem;
 }
+
+.contato__email {
+    display: none;
+}
+
+.contato__email a {
+    font-size: 1rem;
+    color: #333;
+    text-decoration: none;
+}
+
 /* ------------------------------ Seção Apresentação ------------------------------*/
+
 .apresentacao__foto {
     max-width: 98px;
     padding: 1rem;
@@ -142,7 +154,7 @@ a {
 }
 
 .hobbies, .formacao {
-    position: relative;;
+    position: relative;
 }
 /*------------------------------ Seção de Formação --------------------------------*/
 
@@ -172,26 +184,30 @@ a {
 
 .formacao__elemento {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 1.5rem;
-    max-width: 690px;
+    text-align: center;
+    max-width: 453px;
     width: 100%;
     height: 118px;
-    padding: 1.5rem; /*ver aqui */
-    margin-bottom: 7rem;
+    padding: 2.5rem;
+    margin: 50px auto;
     background-color: var(--cor-de-fundo-menu);
 }
 
 .formacao__conteudo {
     display: flex;
     flex-direction: column;
+    position: absolute;
     margin-top: 20rem;
-    margin-left: -110px;
+    left: 1rem
 }
 
 .formacao__icone {
     text-align: center;
-    max-width: 70px;
+    max-width: 84px;
+    width: 100%;
 }
 
 .formacao__nome {
@@ -234,9 +250,12 @@ a {
 .contato__formulario {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 1rem;
-    max-width: 700px;
+    max-width: 490px;
     width: 100%;
+    margin: 0 auto;
 }
 
 .contato__campo {
@@ -284,10 +303,15 @@ a {
 /* ------------------------------ Responsividade ---------------------------------------*/
 
 /* Tablets e telas maiores */
+@media (min-width: 568px) {
+    .habilidades__lista, .hobbies__lista {
+        grid-template-columns: repeat(2, 1fr);
+    } 
+}
+
 @media (min-width: 768px) {
     .cabecalho {
         flex-direction: row;
-        justify-content: space-between;
         align-items: center;
     }
 
@@ -297,6 +321,10 @@ a {
 
     .cabecalho__titulo {
         font-size: 1.5rem;
+    }
+
+    .navegacao__elemento {
+        display: none;
     }
 
     .navegacao__lista {
@@ -309,16 +337,60 @@ a {
     .navegacao__elemento a {
         font-size: 1rem;
     }
+
+    .contato__email {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+        margin-left: 21rem;
+    }
+
+    .contato__email a {
+        font-size: 1em;
+        color: #333;
+        text-decoration: none;
+    }
+
+    .habilidades__lista, .hobbies__lista {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hobbies, .formacao {
+        margin-top: 24rem;
+    }
+
+    .formacao__lista {
+        flex-direction: row;
+        gap: 2rem;
+        margin: 0 auto;
+    }
 }
 
 /* Telas grandes */
 @media (min-width: 1024px) {
-    /* Aqui você pode ajustar ainda mais o design para telas grandes */
     .cabecalho__titulo {
         font-size: 1.8rem;
     }
 
     .navegacao__elemento a {
         font-size: 1.1rem;
+    }
+
+    .contato__email {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .contato__email a {
+        font-size: 1em;
+        color: #333;
+        text-decoration: none;
+    }
+
+    .habilidades__lista, .hobbies__lista {
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
     }
 }
