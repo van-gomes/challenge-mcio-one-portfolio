@@ -7,12 +7,11 @@
 }
 
 body {
-    background-color: var(--cor-de-fundo);
-    font-family: 'Raleway', sans-serif;
-    margin: 0;
     box-sizing: border-box;
     padding: 0;
     line-height: 1.6;
+    font-family: 'Raleway', sans-serif;
+    background-color: var(--cor-de-fundo);
 }
 
 ol, ul, li {
@@ -52,11 +51,14 @@ a {
 }
 
 .contato__email {
-    display: none;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 21rem;
 }
 
 .contato__email a {
-    font-size: 1rem;
+    font-size: 1em;
     color: #333;
     text-decoration: none;
 }
@@ -149,7 +151,6 @@ a {
 /*------------------------------ Seção de Hobbies --------------------------------*/
 
 .hobbies {
-    margin-top: 40rem;
     z-index: 2;
 }
 
@@ -159,8 +160,8 @@ a {
 /*------------------------------ Seção de Formação --------------------------------*/
 
 .formacao {
-    padding: 2rem 1rem;
-    margin-top: 40rem;
+    /* padding: 2rem 1rem; */
+    /* margin-top: 40rem; */
     z-index: 3;
     text-align: center;
     background-color: #eaf3ff;
@@ -168,10 +169,12 @@ a {
 
 
 .formacao__titulo {
+    padding: 3rem;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
     font-size: 2rem;
     font-weight: bold;
     color: #333;
-    margin-bottom: 1.5rem;
 }
 
 .formacao__lista {
@@ -230,19 +233,22 @@ a {
 
 .contato {
     display: flex;
-    flex-direction: column;
-    max-width: 800px;
     margin: 0 auto;
-    gap: 1.5rem;
     padding: 2rem 1rem;
-    background-color: #eaf3ff; /* Cor de fundo suave */
+    background-color: #eaf3ff;
+}
+
+.contato__imagem {
+    max-width: 464px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
 }
 
 .contato__titulo {
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
     font-size: 2rem;
     font-weight: bold;
-    text-align: left; /* Alinhamento do título */
     color: #333;
 }
 
@@ -356,7 +362,7 @@ a {
     }
 
     .hobbies, .formacao {
-        margin-top: 24rem;
+        /* margin-top: 24rem; */
     }
 
     .formacao__lista {
@@ -372,25 +378,39 @@ a {
         font-size: 1.8rem;
     }
 
+    .navegacao__lista {
+        display: flex;
+        gap: 1rem;
+        margin: 0 auto;
+        margin-left: 88rem;
+    }
+
+    .navegacao__elemento {
+        display: block;
+    }
+
     .navegacao__elemento a {
         font-size: 1.1rem;
     }
 
     .contato__email {
-        display: block;
-        text-align: center;
-        margin-top: 10px;
+        display: none;
     }
 
-    .contato__email a {
-        font-size: 1em;
-        color: #333;
-        text-decoration: none;
+    .habilidades, .hobbies {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
     }
 
     .habilidades__lista, .hobbies__lista {
        display: flex;
        justify-content: space-around;
        align-items: center;
+    }
+
+    .habilidades__elemento, .hobbies__elemento {
+        width: 150px;
+        height: 150px;
     }
 }
