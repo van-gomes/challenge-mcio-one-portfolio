@@ -136,12 +136,6 @@ a {
     margin-top: 5rem;
 }
 
-.habilidades__icone, .hobbies__icone, .formacao__icone {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-}
-
 .habilidades__nome, .hobbies__nome {
     font-size: 1rem;
     font-weight: bold;
@@ -160,13 +154,14 @@ a {
 /*------------------------------ Seção de Formação --------------------------------*/
 
 .formacao {
-    /* padding: 2rem 1rem; */
-    /* margin-top: 40rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     z-index: 3;
-    text-align: center;
-    background-color: #eaf3ff;
+    margin-top: 30rem;
 }
-
 
 .formacao__titulo {
     padding: 3rem;
@@ -178,39 +173,42 @@ a {
 }
 
 .formacao__lista {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    margin: 0;
-    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+    overflow-y: auto;
+    max-height: 70vh;
 }
 
 .formacao__elemento {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    text-align: center;
-    max-width: 453px;
-    width: 100%;
-    height: 118px;
-    padding: 2.5rem;
-    margin: 50px auto;
-    background-color: var(--cor-de-fundo-menu);
+    padding: 1rem;
 }
 
-.formacao__conteudo {
+.formacao__imagem {
     display: flex;
-    flex-direction: column;
-    position: absolute;
-    margin-top: 20rem;
-    left: 1rem
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    background-color: var(--cor-de-fundo-menu);
+    text-align: center;
 }
 
 .formacao__icone {
-    text-align: center;
-    max-width: 84px;
+    max-width: 70px;
     width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.formacao__conteudo {
+    width: 100%;
+    margin-top: 0;
+    text-align: left;
 }
 
 .formacao__nome {
