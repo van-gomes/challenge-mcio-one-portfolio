@@ -372,7 +372,6 @@ a {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 2rem;
         padding: 1rem;
     }
 
@@ -398,15 +397,20 @@ a {
         height: 133px;
     }
 
+    .cabecalho {
+        display: flex;
+        width: 100%;
+    }
+
     .cabecalho__titulo {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
     .navegacao__lista {
         display: flex;
+        justify-content: center;
+        align-items: center;
         gap: 1rem;
-        margin: 0 auto;
-        margin-left: 88rem;
     }
 
     .navegacao__elemento {
