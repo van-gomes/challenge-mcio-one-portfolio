@@ -73,6 +73,7 @@ a {
 
 .apresentacao__conteiner {
     display: flex;
+    align-items: stretch;
     flex-direction: column;
     padding: 1rem;
 }
@@ -84,7 +85,76 @@ a {
 }
 
 /* ------------------------------ Seção Sobre mim ----------------------------------*/
-.sobre-mim, .projetos {                                                                
+
+/* Configuração do container principal */
+.apresentacao__conteiner {
+    background-color: #f0f4fa; /* Fundo azul claro */
+    padding: 2rem 3rem;
+    border-radius: 10px; /* Bordas levemente arredondadas */
+    max-width: 900px;
+    margin: 2rem auto; /* Centraliza e adiciona espaçamento vertical */
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Espaçamento entre os elementos internos */
+  }
+  
+  /* Estilo do título */
+  .apresentacao__titulo {
+    font-family: 'Arial', sans-serif;
+    font-size: 2.5rem;
+    color: #333; /* Texto escuro */
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Estilo do parágrafo */
+  .apresentacao__subtitulo,
+  .apresentacao__texto {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.125rem;
+    color: #555; /* Cor do texto mais clara */
+    line-height: 1.8; /* Melhora a legibilidade */
+  }
+  
+  /* Estilo da assinatura */
+  .apresentacao__assinatura {
+    font-family: 'Cursive', 'Arial', sans-serif; /* Fonte cursiva para assinatura */
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 1rem;
+    text-align: left;
+  }
+  
+  /* Configuração do ícone */
+  .apresentacao__icone {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Alinha o ícone à direita */
+    gap: 0.5rem; /* Espaçamento entre ícone e texto */
+    margin-top: 1rem;
+  }
+  
+  .apresentacao__icone span {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .apresentacao__icone .badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff; /* Fundo branco */
+    border-radius: 50%; /* Forma circular */
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+    color: #5d5dff; /* Cor do texto no ícone */
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  }
+    
+/* .sobre-mim, .projetos {                                                                
     display: flex;
     flex-direction: column;
     padding: 1rem;
@@ -94,7 +164,7 @@ a {
 .sobre-mim__assinatura {
     max-width: 140px;
     width: 100%;
-}
+} */
 
 /*------------------------------ Seção de Habilidades ------------------------------*/
 
