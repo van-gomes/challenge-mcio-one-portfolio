@@ -81,12 +81,6 @@ a {
 
 /* ------------------------------ Seção Sobre mim ----------------------------------*/
 
-.sobre-mim__assinatura {
-  max-width: 100px;
-  font-weight: bold;
-  color: #333;
-}
-
 /*------------------------------ Seção de Habilidades ------------------------------*/
 
 .habilidades,
@@ -366,33 +360,6 @@ a {
 
 /* Telas grandes */
 @media (min-width: 1024px) {
-  .apresentacao {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-  }
-
-  .apresentacao__foto {
-    max-width: 368px;
-    width: 100%;
-    height: 368px;
-  }
-
-  .sobre-mim__conteiner,
-  .projetos {
-    display: flex;
-    align-items: stretch;
-    flex-direction: column;
-    padding: 8rem;
-  }
-
-  .sobre-mim__texto {
-    width: 100%;
-    height: 133px;
-  }
-
   .cabecalho {
     display: flex;
     width: 100%;
@@ -443,5 +410,29 @@ a {
 
   .formacao {
     margin-top: 0;
+  }
+
+  .apresentacao__container {
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .apresentacao__conteudo {
+    margin: 3rem;
+  }
+
+  .apresentacao__foto {
+    max-width: 368px;
+    width: 100%;
+    height: 368px;
+  }
+
+  .sobre-mim__assinatura {
+    max-width: 100px;
+    font-weight: bold;
+    color: #333;
   }
 }
