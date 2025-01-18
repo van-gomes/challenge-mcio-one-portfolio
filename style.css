@@ -388,21 +388,13 @@ a {
     display: none;
   }
 
-  .apresentacao__container, .sobre-mim__conteudo {
+  .apresentacao__container {
     background-color: antiquewhite;
     display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .apresentacao__container {
     flex-direction: row-reverse;
     margin: 3rem;
-  }
-
-  .sobre-mim__conteudo {
-    flex-direction: column;
-    max-width: 200px;
+    justify-content: center;
+    align-items: center;
   }
 
   .apresentacao__foto {
@@ -411,11 +403,18 @@ a {
     height: 368px;
   }
 
-  .sobre-mim__assinatura {
-    max-width: 100px;
-    font-weight: bold;
-    color: #333;
-  }
+  .sobre-mim{
+    display: flex;
+    flex-direction: column;
+    padding: 0 150px 20px 150px;
+    margin-bottom: 40px;
+    background-color: #f0f8ff;
+}
+
+
+.sobre-mim__titulo{
+    color:#464646;
+}
 
   .habilidades,
   .hobbies {
