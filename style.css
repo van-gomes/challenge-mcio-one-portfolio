@@ -388,33 +388,53 @@ a {
     display: none;
   }
 
-  .apresentacao__container {
-    background-color: antiquewhite;
+  .apresentacao {
     display: flex;
-    flex-direction: row-reverse;
-    margin: 3rem;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
+    padding: 0 150px 0 150px;
+    margin-bottom: 40px;
   }
 
   .apresentacao__foto {
-    max-width: 368px;
+    order: 2; 
+    margin-left: 10px;
+    max-width: 350px;
     width: 100%;
-    height: 368px;
+    border-radius: 250px;
   }
 
-  .sobre-mim{
+  .apresentacao__container {
+    display: flex;
+    order: 1;
+  }
+
+  .apresentacao__titulo {
+    font-size: 30px;
+    align-items: center;
+    margin-bottom: 0px;
+    color: #464646;
+  }
+
+  .apresentacao__subtitulo {
+    margin-top: 10px;
+  }
+
+  .redes__elemento {
+    display: flex;
+  }
+
+  .sobre-mim {
     display: flex;
     flex-direction: column;
     padding: 0 150px 20px 150px;
     margin-bottom: 40px;
     background-color: #f0f8ff;
-}
+  }
 
-
-.sobre-mim__titulo{
-    color:#464646;
-}
+  .sobre-mim__titulo {
+    color: #464646;
+  }
 
   .habilidades,
   .hobbies {
