@@ -37,7 +37,8 @@ a {
 }
 
 .cabecalho__logo {
-  max-width: 80px; /* Ajuste para telas pequenas */
+  max-width: 80px;
+  /* Ajuste para telas pequenas */
 }
 
 .cabecalho__titulo {
@@ -142,6 +143,7 @@ a {
 .formacao {
   position: relative;
 }
+
 /*------------------------------ Seção de Formação --------------------------------*/
 
 .formacao {
@@ -256,25 +258,34 @@ a {
   padding: 1rem;
   font-size: 1rem;
   border: none;
-  border-radius: 8px; /* Bordas arredondadas */
-  background-color: #ffffff; /* Fundo branco */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  outline: none; /* Remove a borda ao focar */
-  transition: box-shadow 0.3s ease; /* Suaviza a sombra */
+  border-radius: 8px;
+  /* Bordas arredondadas */
+  background-color: #ffffff;
+  /* Fundo branco */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Sombra suave */
+  outline: none;
+  /* Remove a borda ao focar */
+  transition: box-shadow 0.3s ease;
+  /* Suaviza a sombra */
 }
 
 .contato__campo::placeholder {
-  color: #aaa; /* Cor do texto do placeholder */
+  color: #aaa;
+  /* Cor do texto do placeholder */
 }
 
 .contato__campo:focus {
-  box-shadow: 0 0 4px #2b6cb0; /* Destaque azul ao focar */
+  box-shadow: 0 0 4px #2b6cb0;
+  /* Destaque azul ao focar */
 }
 
 /* Área de Mensagem */
 .contato__campo__textarea {
-  height: 150px; /* Altura maior para textarea */
-  resize: none; /* Remove a redimensionamento */
+  height: 150px;
+  /* Altura maior para textarea */
+  resize: none;
+  /* Remove a redimensionamento */
 }
 
 /* Botão */
@@ -282,8 +293,10 @@ a {
   max-width: 215px;
   padding: 0.8rem 1.5rem;
   font-size: 1.2rem;
-  color: #fff; /* Texto branco */
-  background-color: #2b6cb0; /* Cor azul */
+  color: #fff;
+  /* Texto branco */
+  background-color: #2b6cb0;
+  /* Cor azul */
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -291,13 +304,15 @@ a {
 }
 
 .contato__botao:hover {
-  background-color: #2a4365; /* Tom mais escuro no hover */
+  background-color: #2a4365;
+  /* Tom mais escuro no hover */
 }
 
 /* ------------------------------ Responsividade ---------------------------------------*/
 
 /* Tablets e telas maiores */
 @media (min-width: 568px) {
+
   .habilidades__lista,
   .hobbies__lista {
     grid-template-columns: repeat(2, 1fr);
@@ -363,6 +378,17 @@ a {
   .cabecalho {
     display: flex;
     width: 100%;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 16px 150px 0 150px;
+  }
+
+  .cabecalho__conteudo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .5rem;
+    margin-left: 0;
   }
 
   .cabecalho__titulo {
@@ -392,14 +418,14 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 150px 0 150px;
+    padding: 35px 185px 35px 185px;
     margin-bottom: 40px;
   }
 
   .apresentacao__foto {
-    order: 2; 
+    order: 2;
     margin-left: 10px;
-    max-width: 350px;
+    max-width: 250px;
     width: 100%;
     border-radius: 250px;
   }
@@ -427,8 +453,9 @@ a {
   .sobre-mim {
     display: flex;
     flex-direction: column;
-    padding: 0 150px 20px 150px;
+    padding: 35px 185px 35px 185px;
     margin-bottom: 40px;
+    width: 100%;
     background-color: #f0f8ff;
   }
 
@@ -437,10 +464,12 @@ a {
   }
 
   .habilidades,
-  .hobbies {
+  .hobbies,
+  .projetos {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    padding: 35px 185px 35px 185px;
   }
 
   .habilidades__lista,
@@ -457,6 +486,10 @@ a {
   }
 
   .formacao {
+    margin-top: 0;
+  }
+
+  .formacao__detalhe {
     margin-top: 0;
   }
 }
