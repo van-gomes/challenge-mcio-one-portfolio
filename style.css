@@ -492,4 +492,15 @@ a {
   .formacao__detalhe {
     margin-top: 0;
   }
+
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #fff;
+  }
+  
+  footer p {
+    margin: 5px 0;
+    display: block;
+  }  
 }
