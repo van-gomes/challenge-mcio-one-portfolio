@@ -377,7 +377,6 @@ a {
 @media (min-width: 1024px) {
   .cabecalho {
     display: flex;
-    width: 100%;
     justify-content: space-between;
     align-items: baseline;
     padding: 16px 150px 0 150px;
@@ -446,6 +445,11 @@ a {
     margin-top: 10px;
   }
 
+  .redes {
+    display: flex;
+    gap: 2rem;
+  }
+
   .redes__elemento {
     display: flex;
   }
@@ -455,7 +459,6 @@ a {
     flex-direction: column;
     padding: 35px 185px 35px 185px;
     margin-bottom: 40px;
-    width: 100%;
     background-color: #f0f8ff;
   }
 
@@ -469,7 +472,8 @@ a {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding: 35px 185px 35px 185px;
+    padding: 0px 185px 35px 185px;
+    margin-bottom: 3rem;
   }
 
   .habilidades__lista,
@@ -487,6 +491,10 @@ a {
 
   .formacao {
     margin-top: 0;
+  }
+
+  .formacao__titulo {
+    padding: 0px;
   }
 
   .formacao__detalhe {
