@@ -44,7 +44,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: .5rem;
+  gap: 0.5rem;
 }
 
 .cabecalho__logo {
@@ -306,7 +306,6 @@ footer {
 
 /* Tablets e telas maiores */
 @media (min-width: 568px) {
-
   .habilidades__lista,
   .hobbies__lista {
     grid-template-columns: repeat(2, 1fr);
@@ -314,17 +313,23 @@ footer {
 }
 
 @media (min-width: 768px) {
-  .cabecalho {
+  .cabecalho,
+  .formacao__lista {
     flex-direction: row;
+  }
+
+  .cabecalho {
     align-items: center;
+    padding: 0.1rem;
   }
 
   .cabecalho__logo {
     max-width: 1rem;
   }
 
-  .cabecalho__titulo {
-    font-size: 1.5rem;
+  .cabecalho__titulo,
+  .navegacao__elemento a {
+    font-size: 1rem;
   }
 
   .navegacao__elemento {
@@ -338,19 +343,15 @@ footer {
     margin-top: 0;
   }
 
-  .navegacao__elemento a {
-    font-size: 1rem;
-  }
-
   .contato__email {
     display: block;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 0.625rem;
     margin-left: 21rem;
   }
 
   .contato__email a {
-    font-size: 1em;
+    font-size: 1rem;
     color: #333;
     text-decoration: none;
   }
@@ -362,7 +363,6 @@ footer {
   }
 
   .formacao__lista {
-    flex-direction: row;
     gap: 2rem;
     margin: 0 auto;
   }
@@ -370,30 +370,48 @@ footer {
 
 /* Telas grandes */
 @media (min-width: 1024px) {
-  .cabecalho {
+  .cabecalho,
+  .apresentacao,
+  .sobre-mim,
+  .habilidades,
+  .hobbies,
+  .projetos {
     display: flex;
+    padding: 2.1875rem 11.5625rem 2.1875rem 11.5625rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .sobre-mim,
+  .habilidades,
+  .hobbies,
+  .projetos {
+    flex-direction: column;
+  }
+
+  .cabecalho,
+  .apresentacao {
     justify-content: space-between;
+  }
+
+  .cabecalho {
     align-items: baseline;
-    padding: 16px 150px 0 150px;
+    padding-top: 1rem;
+  }
+
+  .cabecalho__conteudo,
+  .navegacao__lista,
+  .redes {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
   }
 
   .cabecalho__conteudo {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 0.5rem;
-    margin-left: 0;
-  }
-
-  .cabecalho__titulo {
-    font-size: 1.5rem;
-  }
-
-  .navegacao__lista {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+    display: flex
+    ;
+            justify-content: center;
+            align-items: center;
+            margin-left: 0;
   }
 
   .navegacao__elemento {
@@ -408,20 +426,12 @@ footer {
     display: none;
   }
 
-  .apresentacao {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 35px 185px 35px 185px;
-    margin-bottom: 40px;
-  }
-
   .apresentacao__foto {
     order: 2;
-    margin-left: 10px;
-    max-width: 250px;
+    margin-left: 0.625rem;
+    max-width: 15.625rem;
     width: 100%;
-    border-radius: 250px;
+    border-radius: 15.625rem;
   }
 
   .apresentacao__container {
@@ -430,19 +440,14 @@ footer {
   }
 
   .apresentacao__titulo {
-    font-size: 30px;
+    font-size: 1.875rem;
     align-items: center;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     color: #464646;
   }
 
   .apresentacao__subtitulo {
-    margin-top: 10px;
-  }
-
-  .redes {
-    display: flex;
-    gap: 2rem;
+    margin-top: 0.625rem;
   }
 
   .redes__elemento {
@@ -450,25 +455,12 @@ footer {
   }
 
   .sobre-mim {
-    display: flex;
     flex-direction: column;
-    padding: 35px 185px 35px 185px;
-    margin-bottom: 40px;
     background-color: #f0f8ff;
   }
 
   .sobre-mim__titulo {
     color: #464646;
-  }
-
-  .habilidades,
-  .hobbies,
-  .projetos {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 0px 185px 35px 185px;
-    margin-bottom: 3rem;
   }
 
   .habilidades__lista,
@@ -480,8 +472,8 @@ footer {
 
   .habilidades__elemento,
   .hobbies__elemento {
-    width: 150px;
-    height: 150px;
+    width: 9.375rem;
+    height: 9.375rem;
   }
 
   .formacao {
@@ -489,7 +481,7 @@ footer {
   }
 
   .formacao__titulo {
-    padding: 0px;
+    padding: 0;
   }
 
   .formacao__detalhe {
@@ -498,7 +490,7 @@ footer {
 
   .contato__imagem {
     display: flex;
-    max-width: 464px;
+    max-width: 29rem;
     width: 100%;
     height: auto;
   }
@@ -510,7 +502,7 @@ footer {
   }
 
   footer p {
-    margin: 5px 0;
+    margin: 0.3125rem 0;
     display: block;
   }
 }
